@@ -6,62 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="bootstrap.css">
   <script src="bootstrap.js"></script>
-
-
-
+  <link rel="stylesheet" href="style.css" type="text/css">
   <title>
     iletişim
   </title>
 </head>
 
 <body>
-
-
-  <nav class="container navbar bg-info navbar-dark mt-3">
-    <a id="BAŞ3" class="navbar-brand text-dark" href="ANASAYFA.html"><img src="rresim/connect.jpg" alt="hata"
-        style="width:270px; height:150px"></a>
-    <button type="button" data-bs-toggle="collapse" class="navbar-toggler mt-2 bg-dark" data-bs-target="#WWQ">
-    <span class="navbar-badge text-white"> 
-      <h4>! click !</h4>
-    </span>
-    </button>
-    <a href="bts-HTML.html"><button type="button" class="btn btn-outline-dark mt-2 mx-1">
-        <h5> HTML </h5>
-      </button></a>
-    <a><button type="button" class="btn btn-outline-dark mt-2 mx-1">
-        <h5> CSS </h5>
-      </button></a>
-    <a><button type="button" class="btn btn-outline-dark mt-2 mx-1">
-        <h5> JAVASCRİPT </h5>
-      </button></a>
-    <a><button type="button" class="btn btn-outline-dark mt-2 mx-1">
-        <h5> BOOTSTRAP </h5>
-      </button></a>
-    <a><button type="button" class="btn btn-outline-dark mt-2 mx-1">
-        <h5> SASS/LESS </h5>
-      </button></a>
-
-
-    <div class="collapse navbar-collapse" id="WWQ">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link text-dark">@ SOFTWARE Developer</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link text-dark">@ SOFTWARE Engineer</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link text-dark">@ ENGİNEER</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    <!--HEADER-->
+    <nav class="container navbar bg-info navbar-dark mt-3">
+      <a id="BAŞ" href="ANASAYFA.html"><img src="rresim/connect.jpg" style="width:320px; height: 150px;"></a>
+      <a ><button type="button" data-bs-toggle="collapse" class="navbar-toggler mt-2 bg-dark" data-bs-target="#WWQ">
+         <span class="navbar-badge text-white"><h6>! click !</h6></span>
+        </button>
+      </a>  
+      <a href="bts-HTML.html"><button type="button" class="btn btn-outline-dark mt-2 mx-1"><h5> HTML </h5></button></a>
+      <a ><button type="button" class="btn btn-outline-dark mt-2 mx-1"><h5> CSS</h5></button></a>
+      <a href="JAVASCRİPT.html"><button type="button" class="btn btn-outline-dark mt-2 mx-1"><h5> JAVASCRİPT</h5></button></a>
+      <a ><button type="button" class="btn btn-outline-dark mt-2 mx-1"><h5> BOOTSTRAP </h5></button></a>
+      <a ><button type="button" class="btn btn-outline-dark mt-2 mx-1"><h5> SASS/LESS </h5></button></a>  
+    
+       <div class="collapse navbar-collapse" id="WWQ">
+         <ul class="navbar-nav">
+           <li class="nav-item">
+             <a class="nav-link text-dark">@ SOFTWARE Developer</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link text-dark">@ SOFTWARE Engineer</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
   <!--FORM -->
   <div class="container mt-3">
-    <img src="rresim/İLETİ.jpeg" style="width:1115px; height:400px">
+    <img id="RESİM" src="rresim/İLETİ.jpeg">
 
     <div class="alert alert-primary mt-3 d-flex justify-content-between">
       <img src="rresim/e-ticaret.jpg" style="width: 80px; height: 50px">
@@ -71,33 +50,46 @@
     <div class="row mt-3">
 
       <div class="col-lg-8">
-        <form action="#">
+        <form action="#" class="was-validated">
+          <!--
+             feedback : geri bıldırım
+             valid : gecerli
+             invalid : gecersiz
+           -->
           <div class="mt-2">
             <label for="name" class="form-label text-success">
               <h5>NAME</h5>
             </label>
-            <input type="email" class="form-control" style="width: 350px" placeholder="* * name">
+            <input type="text" class="form-control" style="width: 350px" placeholder="* * name" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Lütfen bu alanı doldurun !</div>
           </div>
 
           <div class="mt-2">
             <label for="surname" class="form-label text-success">
               <h5> SURNAME</h5>
             </label>
-            <input type="text" class="form-control" style="width: 350px" placeholder="* * surname">
+            <input type="text" class="form-control" style="width: 350px" placeholder="* * surname" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Lütfen bu alanı doldurun !</div>
           </div>
 
           <div class="mt-2">
             <label for="email" class="form-label text-success">
               <h5> E-Mail</h5>
             </label>
-            <input type="email" class="form-control" style="width: 350px" placeholder="* * mail">
+            <input type="email" class="form-control" style="width: 350px" placeholder="* * mail" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Lütfen bu alanı doldurun !</div>
           </div>
 
           <div class="mt-2">
             <label for="psswrd" class="form-label text-success">
               <h5> Password</h5>
             </label>
-            <input type="password" class="form-control" style="width:350px" placeholder="* * psswrd">
+            <input type="password" class="form-control" style="width:350px" placeholder="* * psswrd" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Lütfen bu alanı doldurun !</div>
           </div>
 
           <div class="mt-2 form-check">
@@ -111,7 +103,7 @@
             <label for="comment" class="form-label text-success">
               <h5> Comment</h5>
             </label>
-            <textarea type="text" class="form-control" style="width: 600px" rows="5" placeholder="* * * *"></textarea>
+            <textarea type="text" class="form-control" style="width:450px" rows="5" placeholder="* * * *"></textarea>
           </div>
 
           <button type="submit" class="btn btn-success mt-3"> * Gönder</button>
@@ -135,121 +127,71 @@
       </div>
     </div>
   </div>
-
-  
-</body>
-
+<!--FOOTER-->
 <footer class="container">
 
-
-  <div class="card mt-5" style="height: 300px">
-    <div class="card-header bg-info">
-
-      <div class="row">
-
-        <div class="col-md-6">
-          <h1 class="bg-dark text-info" style="font-family:comic sans"> * * SOFTWARE</h1>
-
-
-        </div>
-        <div class="col-md-6">
-          <a href="https://www.youtube.com" target="_blank"><img src="rresim/youtube.png" alt="hata"
-              class="card-img-bottom mx-2" style="width: 55px;height: 50px"></a>
-
-          <a href="#"><img src="rresim/insss.jpg" alt="hata" class="card-img-bottom mx-2"
-              style="width: 50px;height: 45px"></a>
-
-          <a href="https://tr.linkedin.com/in/erhan-kalkan-585b3220a"><img src="rresim/-linkedin.png" alt="hata"
-              class="card-img-bottom mx-3" style="width: 55px;height: 45px"></a>
-
-          <a href="https://api.whatsapp.com/send?phone=905534187640" target=”_blank”>
-            <img src="rresim/wwttsspp.png" alt="hata" class="card-img-bottom mx-3" style="width: 55px;height: 45px"></a>
-          </a>
-
-        </div>
-
+  <div class=" mt-4" style="height:300px">
+   <div class=" bg-info">
+    <div class="row">
+     <div class="col-md-6"><h1 class="bg-dark text-info mt-1 mx-2" style="font-family:comic sans"> * * SOFTWARE</h1>
       </div>
+       <div class="col-md-6">
+        <a href="https://www.youtube.com" target="_blank"><img src="rresim/youtube.png" 
+          alt="hata" class= "mt-2 mx-1 FOTER"></a>
+        <a href="#" ><img src="rresim/insss.jpg"alt="hata" class="mt-2 mx-1 FOTER"></a>
+        <a href="https://tr.linkedin.com/in/erhan-kalkan-585b3220a"><img src="rresim/-linkedin.png" 
+          alt="hata" class="mt-2 mx-2 FOTER"></a>
+        <a href="https://api.whatsapp.com/send?phone=05303453169" target=”_blank”><img src="rresim/wwttsspp.png" 
+          alt="hata" class="mt-2 mx-1 FOTER"></a>
+        </a>
+        </div>     
+      </div>
+   </div>
+     
+  <div class="bg-secondary">
+    
+    <div class="row mt-2 mb-3 mx-1">
+     <div class="col-sm-4 mt-4 mx-1 TABLOFOTER">
+       <div class="list-group list-group-flush">
+         <a class="list-group-item list-group-item-danger" href="#"><h4> WEB TASARIM </h4></a>   
+         <a class="list-group-item list-group-item-primary" href="#ALT-"><h6>Kurumsal Web Tasarım</h6></a>   
+         <a class="list-group-item list-group-item-primary" href="#ALT-" ><h6>Responsive Web Tasarım</h6></a>   
+         <a class="list-group-item list-group-item-primary" href="#ALT-" ><h6>Profesyonel Web Tasarım</h6></a>   
+       </div>
+       </div>
+     
+     <div class="col-sm-4 mt-4 mx-1 TABLOFOTER"> 
+       <div class="list-group list-group-flush">
+          <a class="list-group-item list-group-item-danger" href="#"><h4> PROGRAMS </h4></a>   
+          <a class="list-group-item list-group-item-primary" href="#"><h6>Backend</h6></a>   
+          <a class="list-group-item list-group-item-primary" href="#" ><h6>Frontend</h6></a>   
+          <a class="list-group-item list-group-item-primary" href="#" ><h6>Framewoks</h6></a>   
+      </div>  
+     </div>
+            
+     <div class="col-sm-4 mt-4 mx-1">   
+       <div class="list-group list-group-flush">
+         <a class="list-group-item list-group-item-danger" href="#"><h4> İLETİŞİM </h4></a>   
+         <a class="list-group-item list-group-item-primary" href="#"><h6>Watsapp</h6></a>   
+         <a class="list-group-item list-group-item-primary" href="#" ><h6>Linkedin</h6></a>   
+         <a class="list-group-item list-group-item-primary" href="#" ><h6>İnstagram</h6></a>   
+       </div>
     </div>
-
-
-    <div class="card-body bg-secondary mt-2">
-
-      <div class="row mt-4 mb-4">
-        <div class="col-sm-4">
-
-          <div class="list-group list-group-flush">
-            <a class="list-group-item list-group-item-info" href="#">
-              <h4> WEB TASARIM </h4>
-            </a>
-            <a class="list-group-item list-group-item-secondary" href="#">
-              <h6>Kurumsal Web Tasarım</h6>
-            </a>
-            <a class="list-group-item list-group-item-secondary" href="#">
-              <h6>Responsive Web Tasarım</h6>
-            </a>
-            <a class="list-group-item list-group-item-secondary" href="#">
-              <h6>Profesyonel Web Tasarım</h6>
-            </a>
-
-          </div>
-
-        </div>
-        <div class="col-sm-4">
-
-          <div class="list-group list-group-flush">
-            <a class="list-group-item list-group-item-info" href="#">
-              <h4> PROGRAMS </h4>
-            </a>
-            <a class="list-group-item list-group-item-secondary" href="#">
-              <h6>Backend</h6>
-            </a>
-            <a class="list-group-item list-group-item-secondary" href="#">
-              <h6>Frontend</h6>
-            </a>
-            <a class="list-group-item list-group-item-secondary" href="#">
-              <h6>Framewoks</h6>
-            </a>
-
-          </div>
-
-        </div>
-
-        <div class="col-sm-4">
-
-          <div class="list-group list-group-flush">
-            <a class="list-group-item list-group-item-info" href="#">
-              <h4> İLETİŞİM </h4>
-            </a>
-            <a class="list-group-item list-group-item-secondary" href="#">
-              <h6>Watsapp</h6>
-            </a>
-            <a class="list-group-item list-group-item-secondary" href="#">
-              <h6>Linkedin</h6>
-            </a>
-            <a class="list-group-item list-group-item-secondary" href="#">
-              <h6>İnstagram</h6>
-            </a>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="row">
-        <div class="col-sm-5"></div>
-        <div class="col-sm-4">
-          <a href="#BAŞ3"><button type="button" class="btn btn-success text-white">
-              <h5>Page Start</h5>
-            </button>
-          </a>
-
-        </div>
-        <div class="col-sm-3"></div>
-
-      </div>
-    </div>
+ 
   </div>
 
-</footer>
+  <div class="row">
+      <div class="col-sm-4"></div>
+       <div class="col-sm-4">
+        <a id="PAGESTART" href="#BAŞ"><button type="button" class="btn btn-success text-white">
+        <h5>Page Start</h5></button>
+        </a>
+       </div>
+      <div class="col-sm-4"></div>
+     </div>
+  </div>
+ </div>
+ </footer>
+</body>
 
 </html>

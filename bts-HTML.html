@@ -5,73 +5,60 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet"  href="bootstrap.css">
-
+    <script src="bootstrap.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>
         BOOTSTRAP
     </title>
 </head>
 <body>
 
-    <nav class= "container navbar bg-info navbar-dark mt-3">
-      <a id="BAŞ2" class="navbar-brand text-dark" href="ANASAYFA.html"><img src="rresim/html.jpg" alt="hata" style="width:260px; height:150px"></a>
-      <a><button type="button" data-bs-toggle="collapse" class="navbar-toggler mt-2 bg-dark" data-bs-target="#WWQ"></a>
-          <span class="navbar-badge text-white"><h4>! click !</h4></span>
+  <!--HEADER-->
+  <nav class="container navbar bg-info navbar-dark mt-3">
+    <a id="BAŞ" href="ANASAYFA.html"><img src="rresim/html.jpg" style="width:320px; height: 150px;"></a>
+    <a ><button type="button" data-bs-toggle="collapse" class="navbar-toggler mt-2 bg-dark" data-bs-target="#WWQ">
+      <span class="navbar-badge text-white"><h6>! click !</h6></span>
       </button>
-         <a><button type="button" class="btn btn-outline-dark mt-2 mx-1"><h5> CSS </h5></button></a>
-         <a><button type="button" class="btn btn-outline-dark mt-2 mx-1"><h5> JAVASCRİPT </h5></button></a>
-         <a><button type="button" class="btn btn-outline-dark mt-2 mx-1"><h5> BOOTSTRAP </h5></button></a>
-         <a><button type="button" class="btn btn-outline-dark mt-2 mx-1"><h5> SASS/LESS </h5></button></a>
-         <a href="İLETİşim.html"><button type="button" class="btn btn-outline-dark mt-2 mx-1 active"><h5> İLETİŞİM* </h5></button></a>
+    </a>
+    <a ><button type="button" class="btn btn-outline-dark mt-2 mx-1"><h5> CSS </h5></button></a>
+    <a href="JAVASCRİPT.html"><button type="button" class="btn btn-outline-dark mt-2 mx-1"><h5> JAVASCRİPT</h5></button></a>
+    <a ><button type="button" class="btn btn-outline-dark mt-2 mx-1"><h5> BOOTSTRAP </h5></button></a>
+    <a ><button type="button" class="btn btn-outline-dark mt-2 mx-1"><h5> SASS/LESS </h5></button></a>
+    <a href="İLETİşim.html"><button type="button"class="btn btn-outline-dark mt-2 mx-1 active"><h6>İLETİŞİM*</h6></button></a>
 
   
      <div class="collapse navbar-collapse" id="WWQ">
        <ul class="navbar-nav">
          <li class="nav-item">
-             <a class="nav-link text-dark">@ SOFTWARE Developer</a>
+           <a class="nav-link text-dark">@ SOFTWARE Developer</a>
          </li>
-  
          <li class="nav-item">
-          <a class="nav-link text-dark">@ SOFTWARE Engineer</a>
-      </li>
-  
-      <li class="nav-item">
-          <a class="nav-link text-dark">@ ENGİNEER</a>
-      </li>
+           <a class="nav-link text-dark">@ SOFTWARE Engineer</a>
+        </li>
       </ul>
     </div>
   </nav>
+
 <!--CAROUSEL-->
 <div id="QQ" class="carousel slide container mt-2" data-bs-ride="carousel">
   <div class="carousel-indicators">
       <button type="button" data-bs-slide-to="0" data-bs-target="#QQ" class="bg-primary active"></button>
       <button type="button" data-bs-slide-to="1" data-bs-target="#QQ" class="bg-primary"></button>
       <button type="button" data-bs-slide-to="2" data-bs-target="#QQ" class="bg-primary"></button>
-      <button type="button" data-bs-slide-to="3" data-bs-target="#QQ" class="bg-primary"></button>
-      <button type="button" data-bs-slide-to="4" data-bs-target="#QQ" class="bg-primary"></button>
-
+      
   </div>
 
   <div class="carousel-inner">
       <div class="carousel-item active">
-          <img src="rresim/html-5.png" class="d-blok" alt="hata" style="width: 85%; height: 600px; margin-left:90px" >
+          <img src="rresim/html-5.png" class="d-blok xxKAROSEL" alt="hata">
       </div>
 
       <div class="carousel-item">
-          <img src="rresim/vector.jpg"  class="d-blok" alt="hata" style="width: 85%; margin-left:90px">
+          <img src="rresim/vector.jpg"  class="d-blok xxKAROSEL" alt="hata">
       </div>
-
-
-      <div class="carousel-item">
-          <img src="rresim/images.png"  class="d-blok" alt="hata" style="width: 85%; height: 600px; margin-left:90px">
-      </div>
-
-      <div class="carousel-item">
-          <img src="rresim/ssss.jpg"  class="d-blok" alt="hata" style="width: 85%; height: 600px; margin-left:90px">
-      </div>
-
      
       <div class="carousel-item">
-          <img src="rresim/j35av38lw.jpg" class="d-blok" alt="hata" style="width: 85%; height: 600px; margin-left:90px">
+          <img src="rresim/j35av38lw.jpg" class="d-blok xxKAROSEL" alt="hata">
       </div>
   </div>
 
@@ -88,106 +75,81 @@
 <h3 class="container bg-secondary text-white d-flex justify-content-between mt-4">
 <span class="spinner-grow text-danger spinner-grow-md"></span>
 Web TASARIM Technologies
-<span class="badge bg-danger"> <abbr title="Software Developer"> * * *  </abbr></span>
+<span class="badge bg-danger"> <abbr title="Software Developer"> - - -  </abbr></span>
 </h3>
 
 <h5  class="container text-danger d-flex justify-content-between mt-4" >
-* * * Aşağida Bahsedilecek Olan Teknolojileri -Önyüz,Arka Uç- Öğrenerek YAZILIM Geliştirici Olabilirsiniz.* * *
+* * Aşağida Bahsedilecek Olan Teknolojileri  Öğrenerek YAZILIM Geliştirici Olabilirsiniz.* *
 </h5>
 
-
-
-
 <div class="container mt-3">
- <a href="BTSTT.html"><img src="rresim/aaaaaa.png" alt="hatalı" style="width: 1110px; height: 400px;"></a>
+ <a href="BTSTT.html"><img id="RESİM11" src="rresim/aaaaaa.png" alt="hatalı"></a>
 </div>
-  <script src="bootstrap.js"></script>
 
-</body>
+<!--FOOTER-->
 <footer class="container">
-
-
-  <div class="card mt-5" style="height: 300px">
-      <div class="card-header bg-info">
-       
-        <div class="row">
-              
-          <div class="col-md-6"><h1 class="bg-dark text-info" style="font-family:comic sans"> * * SOFTWARE</h1>
-            
-            
-        </div>
-          <div class="col-md-6">
-              <a href="https://www.youtube.com" target="_blank"><img src="rresim/youtube.png" alt="hata" class="card-img-bottom mx-2"
-                 style="width: 55px;height: 50px"></a>
-
-                 <a href="#" ><img src="rresim/insss.jpg" alt="hata" class="card-img-bottom mx-2"
-                style="width: 50px;height: 45px"></a>
-
-     <a href="https://tr.linkedin.com/in/erhan-kalkan-585b3220a"><img src="rresim/-linkedin.png" alt="hata" class="card-img-bottom mx-3"
-        style="width: 55px;height: 45px"></a>
-      <a href="https://api.whatsapp.com/send?phone=905534187640" target=”_blank”>
-    <img src="rresim/wwttsspp.png" alt="hata" class="card-img-bottom mx-3" style="width: 55px;height: 45px"></a>
-      </a>
+  <div class=" mt-4" style="height:300px">
+    <div class=" bg-info">
+     <div class="row">
+      <div class="col-md-6"><h1 class="bg-dark text-info mt-1 mx-2" style="font-family:comic sans"> * * SOFTWARE</h1>
+       </div>
+        <div class="col-md-6">
+         <a href="https://www.youtube.com" target="_blank"><img src="rresim/youtube.png" 
+           alt="hata" class= "mt-2 mx-1 FOTER"></a>
+         <a href="#" ><img src="rresim/insss.jpg"alt="hata" class="mt-2 mx-1 FOTER"></a>
+         <a href="https://tr.linkedin.com/in/erhan-kalkan-585b3220a"><img src="rresim/-linkedin.png" 
+           alt="hata" class="mt-2 mx-2 FOTER"></a>
+         <a href="https://api.whatsapp.com/send?phone=05303453169" target=”_blank”><img src="rresim/wwttsspp.png" 
+           alt="hata" class="mt-2 mx-1 FOTER"></a>
+         </a>
+         </div>     
+       </div>
     </div>
-        
-      </div>
-            
-      </div>
-
-
-<div class="card-body bg-secondary mt-2">
- 
- <div class="row mt-4 mb-4">
-  <div class="col-sm-4">
-
-    <div class="list-group list-group-flush">
-        <a class="list-group-item list-group-item-info" href="#"><h4> WEB TASARIM </h4></a>   
-        <a class="list-group-item list-group-item-secondary" href="#"><h6>Kurumsal Web Tasarım</h6></a>   
-        <a class="list-group-item list-group-item-secondary" href="#" ><h6>Responsive Web Tasarım</h6></a>   
-        <a class="list-group-item list-group-item-secondary" href="#" ><h6>Profesyonel Web Tasarım</h6></a>   
-  
+      <!--footer table-->
+   <div class="bg-secondary">
+     
+     <div class="row mt-2 mb-3 mx-1">
+      <div class="col-sm-4 mt-4 mx-1 TABLOFOTER">
+        <div class="list-group list-group-flush">
+          <a class="list-group-item list-group-item-danger" href="#"><h4> WEB TASARIM </h4></a>   
+          <a class="list-group-item list-group-item-primary" href="#ALT-"><h6>Kurumsal Web Tasarım</h6></a>   
+          <a class="list-group-item list-group-item-primary" href="#ALT-" ><h6>Responsive Web Tasarım</h6></a>   
+          <a class="list-group-item list-group-item-primary" href="#ALT-" ><h6>Profesyonel Web Tasarım</h6></a>   
         </div>
-  
-    </div>
-   <div class="col-sm-4">
-  
-      <div class="list-group list-group-flush">
-               <a class="list-group-item list-group-item-info" href="#"><h4> PROGRAMS </h4></a>   
-               <a class="list-group-item list-group-item-secondary" href="#"><h6>Backend</h6></a>   
-               <a class="list-group-item list-group-item-secondary" href="#" ><h6>Frontend</h6></a>   
-               <a class="list-group-item list-group-item-secondary" href="#" ><h6>Framewoks</h6></a>   
-            
+        </div>
+      
+      <div class="col-sm-4 mt-4 mx-1 TABLOFOTER"> 
+        <div class="list-group list-group-flush">
+           <a class="list-group-item list-group-item-danger" href="#"><h4> PROGRAMS </h4></a>   
+           <a class="list-group-item list-group-item-primary" href="#"><h6>Backend</h6></a>   
+           <a class="list-group-item list-group-item-primary" href="#" ><h6>Frontend</h6></a>   
+           <a class="list-group-item list-group-item-primary" href="#" ><h6>Framewoks</h6></a>   
+       </div>  
+      </div>
+             
+      <div class="col-sm-4 mt-4 mx-1">   
+        <div class="list-group list-group-flush">
+          <a class="list-group-item list-group-item-danger" href="#"><h4> İLETİŞİM </h4></a>   
+          <a class="list-group-item list-group-item-primary" href="#"><h6>Watsapp</h6></a>   
+          <a class="list-group-item list-group-item-primary" href="#" ><h6>Linkedin</h6></a>   
+          <a class="list-group-item list-group-item-primary" href="#" ><h6>İnstagram</h6></a>   
+        </div>
      </div>
   
-  </div>
-       
-   <div class="col-sm-4">
-  
-      <div class="list-group list-group-flush">
-               <a class="list-group-item list-group-item-info" href="#"><h4> İLETİŞİM </h4></a>   
-               <a class="list-group-item list-group-item-secondary" href="#"><h6>Watsapp</h6></a>   
-               <a class="list-group-item list-group-item-secondary" href="#" ><h6>Linkedin</h6></a>   
-               <a class="list-group-item list-group-item-secondary" href="#" ><h6>İnstagram</h6></a>   
-       </div>
-  
- </div>
-
-</div>
-
-<div class="row">
-  <div class="col-sm-5"></div>
-   <div class="col-sm-4">
-     <a href="#BAŞ2"><button type="button" class="btn btn-success text-white">
-         <h5>Page Start</h5></button>
-     </a>
-    
    </div>
-  <div class="col-sm-3"></div>
-
- </div>
-</div>
-</div>
-
-</footer>
-
+    <!--Html-CSS Mobil uyum bAkılacak*??-->
+   <div class="row">
+       <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+         <a id="PAGESTART" href="#BAŞ"><button type="button" class="btn btn-success text-white">
+         <h5>Page Start</h5></button>
+         </a>
+        </div>
+       <div class="col-sm-4"></div>
+      </div>
+   </div>
+  </div>
+  
+ </footer>
+</body>
 </html>
